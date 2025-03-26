@@ -1,2 +1,0 @@
-core::result::Result<core::convert::Infallible, alloy_json_rpc::error::RpcError<alloy_transport::error::TransportErrorKind>>
-std::result::Result<std::convert::Infallible, alloy::transports::RpcError<alloy::transports::TransportErrorKind>>

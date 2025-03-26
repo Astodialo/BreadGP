@@ -28,6 +28,8 @@
             nodePackages.ts-node
             nodePackages.pnpm
 
+            openssl
+            pkg-config
             docker
 
             # ... any other dependencies we need
