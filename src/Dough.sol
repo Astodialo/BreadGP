@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity 0.8.25;
+pragma solidity 0.8.28;
 
 import {IERC20} from '@oz/token/ERC20/IERC20.sol';
 import {ICurveStableSwap, ICurveStableSwapV2} from 'src/interfaces/ICurveStableSwap.sol';

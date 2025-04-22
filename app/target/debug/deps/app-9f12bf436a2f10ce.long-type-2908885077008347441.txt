@@ -1,0 +1,1 @@
+core::result::Result<core::convert::Infallible, alloy_provider::heart::PendingTransactionError>
