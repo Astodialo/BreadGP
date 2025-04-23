@@ -19,4 +19,4 @@ lcov.info
 # Testing
 .gas-snapshot
 
-/app/target/
+**/target

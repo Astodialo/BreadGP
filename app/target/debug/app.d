@@ -1,1 +1,0 @@
-/home/delos/Projects/eth/BreadGP/app/target/debug/app: /home/delos/Projects/eth/BreadGP/app/src/check_balance.rs /home/delos/Projects/eth/BreadGP/app/src/main.rs /home/delos/Projects/eth/BreadGP/src/abi/Dough.abi
