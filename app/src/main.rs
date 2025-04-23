@@ -1,3 +1,11 @@
+/// flatten the contract
+///
+/// forge flatten Dough.sol -o Dough.flat.sol
+///
+/// make the abi and bytecode
+///
+/// solc SavingCircles.flat.sol --via-ir --optimize --bin --abi -o abi
+///
 mod check_balance;
 
 use std::time::Duration;
@@ -23,11 +31,8 @@ async fn main() -> eyre::Result<()> {
     // Spin up local Anvil node.
     let provider = ProviderBuilder::new().on_anvil_with_wallet();
 
-    let bytecode = hex::decode(
-        std::fs::read_to_string("../src/abi/Dough.bin").expect(
-            "Well... go make that bytecode.\nsolc Dough.flat.sol --via-ir --optimize --bin -o bytecode\n",
-        ),
-    )?;
+    let bytecode =
+        hex::decode(std::fs::read_to_string("../src/abi/Dough.bin").expect("make the bytecode"))?;
     let tx = TransactionRequest::default().with_deploy_code(bytecode);
 
     println!("{:?}", tx);
